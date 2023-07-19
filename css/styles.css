@@ -1,0 +1,495 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    list-style: none;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+body{
+    margin: 0;
+    font-family: 'poppins';
+    background-color: #eff5f5;
+}
+
+h1{ font-size: 3.5em;}
+h2{ font-size: 2.8em;}
+h3{ font-size: 2em;}
+h4{ font-size: 1.8em;}
+p{ font-size: 1.25em;}
+ul{ list-style: none;}
+
+
+button{
+    font-size: 1.3em;
+    font-weight: bold;
+    padding: 5px 15px;
+    border-radius: 15px;
+    border: 1px solid rgba(0,0,0,0.5);
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+    background-color: #fc7300;
+    cursor: pointer;
+}
+button:hover{
+    background-color: #d15e00;
+}
+
+
+.contenedor{
+    max-width: 1400px;
+    margin: auto;
+}
+
+
+.color-logo-school{color: rgb(3, 3, 216);}
+
+
+header{
+    background-color: #00425a;
+}
+header .contenedor{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+
+
+
+.logo img{
+    width: 180px;
+    border-radius: 30px;
+    padding: 10px 15px;
+}
+
+
+
+
+
+.menu{
+    position: absolute;
+    display: flex;
+    align-items: center;
+}
+.menu-icono{
+    width: 50px;
+    cursor: pointer;
+}
+
+#menu{
+    display: none;
+}
+#menu:checked ~ .navbar{
+    display: initial;
+}
+
+
+.navbar{
+    top: 100%;
+    background-color: #181823;
+    display: none;
+    border-radius: 20px;
+}
+.navbar ul{
+    margin-top: 0;
+}
+.navbar ul li{
+    position: relative;
+    float: left;
+    width: 100%;
+}
+.navbar ul li a{
+    padding: 20px;
+    display: block;
+    color: #eff5f5;
+    text-decoration: none;
+}
+.navbar ul li a:hover{
+    color: #d15e00;
+}
+
+
+
+
+
+
+
+#banner{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.7),
+        rgba(0,0,0,0.7)
+    ) 
+    ,url("../img/titulo.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+#banner h1{
+    color: #eff5f5;
+}
+#banner button{
+    padding: 20px 25px;
+}
+
+
+
+
+
+
+
+#quienes-somos{
+    background-color: #eff5f5;
+}
+#quienes-somos .contenedor{
+    text-align: center;
+    padding: 170px 12px;
+}
+
+
+
+
+
+
+
+#porque-elegirnos{
+    background-color: #00425a;
+    color: #eff5f5;
+}
+#porque-elegirnos .contenedor{
+    text-align: center;
+    padding: 180px 12px;
+}
+
+
+
+
+
+#propuesta-educativa{
+    background-color: #181823;
+    color: #eff5f5;
+    text-align: center;
+}
+#propuesta-educativa .contenedor{
+    padding: 110px 12px;
+}
+#propuesta-educativa h2{
+    margin-top: 0;
+    margin-bottom: 80px;
+}
+#propuesta-educativa p{
+    display: none;
+}
+#propuesta-educativa .propuestas{
+    background-position: center center;
+    background-size: cover;
+    padding: 30px;
+    margin: 15px;
+    border-radius: 15px;
+}
+.propuestas:first-child{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.7),
+        rgba(0,0,0,0.7)
+    ) 
+    ,url("../img/propuesta-arte.jpg");
+}
+.propuestas:nth-child(2){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.7),
+        rgba(0,0,0,0.7)
+    ) 
+    ,url("../img/propuesta-deporte.jpg");
+}
+.propuestas:nth-child(3){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.7),
+        rgba(0,0,0,0.7)
+    ) 
+    ,url("../img/propuesta-ingles.jpg");
+}
+.propuestas:nth-child(4){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.7),
+        rgba(0,0,0,0.7)
+    ) 
+    ,url("../img/propuesta-ciencias.jpg");
+}
+.propuestas:nth-child(5){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.7),
+        rgba(0,0,0,0.7)
+    ) 
+    ,url("../img/propuesta-tecnologia.jpg");
+}
+
+
+
+#ultimas-noticias{
+    background-color: #eff5f5;
+}
+#ultimas-noticias .contenedor{
+    text-align: center;
+}
+#ultimas-noticias .apartado{
+    padding: 15px 0px;
+}
+#ultimas-noticias .noticias{
+    padding: 12px 30px;
+    margin: 15px;
+    color: #eff5f5;
+    background-position: center;
+    background-size: cover;
+}
+#ultimas-noticias .noticias p{
+    background-color: #88888870;
+    border-radius: 15px;
+}
+.noticias:first-child{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.7),
+        rgba(0,0,0,0.7)
+    ) 
+    ,url("../img/noticia1.jpg");
+}
+.noticias:last-child{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.7),
+        rgba(0,0,0,0.7)
+    ) 
+    ,url("../img/noticia2.jpg");
+}
+
+
+
+
+iframe{
+    border-radius: 50px;
+}
+.pie-de-pagina{
+    width: 100%;
+    background-color: #fc7300;
+    color: #eff5f5;
+    text-align: center;
+}
+.pie-de-pagina .parte1{
+    width: 100%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(1 , 1fr);
+    padding: 5px 12px;
+}
+i{
+    font-size: 28px;
+    margin: 20px;
+    padding: 10px 15px;
+    color: #181823;
+    border-radius: 50%;
+    box-shadow: 0px 5px 10px rgba(0,0,0,0.35);
+    transition: 0.3s ease;
+}
+.bi-facebook:hover{
+    background-color: blue;
+    color: white;
+    box-shadow: 0 0 15px blue,
+                0 0 45px blue,
+                0 0 75px blue;
+}
+.bi-instagram:hover{
+    background-color: #ee2106;
+    color: white;
+    box-shadow: 0 0 15px #ee0606,
+                0 0 45px #ee0e06,
+                0 0 75px #ee1506,
+                0 0 115px #ee3406;
+}
+.bi-twitter:hover{
+    background-color: #1DA1F2;
+    color: white;
+    box-shadow: 0 0 15px #1DA1F2,
+                0 0 45px #1DA1F2,
+                0 0 75px #1DA1F2;
+}
+.pie-de-pagina .parte2{
+    background-color: #d15e00;
+    padding: 5px 10px;
+    text-align: center;
+}
+
+
+
+
+ @media (min-width: 945px){
+
+
+    #banner h1{
+        font-size: 5em;
+    }
+
+
+
+    #quienes-somos .contenedor{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    #quienes-somos .texto-somos{
+        width: 50%;
+        text-align: initial;
+        padding-left: 30px;
+        max-width: 600px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    #quienes-somos h2{
+        margin-top: 0px;
+    }
+    #quienes-somos .img-quienes-somos{
+        background-image: url("../img/quienes-somos.jpg");
+        background-size: cover;
+        background-position: center center;
+        height: 500px;
+        width: 400px;
+    }
+
+
+
+
+
+
+    #porque-elegirnos .contenedor{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    #porque-elegirnos .texto-pq{
+        width: 50%;
+        text-align: initial;
+        padding-right: 30px;
+        max-width: 600px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    #quienes-somos h2{
+        margin-top: 0px;
+    }
+    #porque-elegirnos .img-porque-elegirnos{
+        background-image: url("../img/porque-elegirnos.jpg");
+        background-size: cover;
+        background-position: center center;
+        height: 500px;
+        width: 400px;
+    }
+
+
+    #ultimas-noticias .apartado{
+        display: flex;
+        justify-content: center;
+    }
+    #ultimas-noticias .apartado{
+        padding: 15px 0px;
+    }
+    #ultimas-noticias .noticias{
+        padding: 20px;
+        border-radius: 15px;
+    }
+    #ultimas-noticias .noticias p{
+        display: block;
+        margin-bottom: 30px;
+    }
+
+
+
+    
+    .pie-de-pagina .parte1{
+        grid-template-columns: repeat(3 , 1fr);
+    }
+    .pie-de-pagina .contenedor{
+        max-width: 100%;
+    }
+    .pie-de-pagina a{
+        display: flex;
+        justify-content: center;
+    }
+    i{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        max-width: 50px;
+
+    }
+
+ 
+}
+
+
+@media (min-width: 1140px){
+    header{
+        position: fixed;
+        width: 100%;
+    }
+
+    header .contenedor{
+        flex-direction: row;
+        justify-content: space-between;
+        padding-right: 15px;
+    }
+
+
+    .menu-icono{
+        display: none;
+    }
+    
+    
+    .navbar{
+        flex-direction: row;
+        background-color: #00425a;
+        display: initial;
+        float: right;
+    }
+    .navbar ul li{
+        position: relative;
+        float: left;
+        width: fit-content;
+    }
+    .navbar ul li a{
+        float: right;
+    }
+}
+
+
+@media (min-width: 1245px){
+    #propuesta-educativa .propuestas-lista{
+        display: flex;
+        justify-content: center;
+    }
+
+    #propuesta-educativa p{
+        display: block;
+        margin-bottom: 30px;
+    }
+    #propuesta-educativa h3{
+        margin-top: 0;
+    }
+    #propuesta-educativa .propuestas{
+        padding: 10px;
+    }
+   
+}
